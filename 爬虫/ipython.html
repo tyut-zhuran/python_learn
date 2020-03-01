@@ -1,0 +1,770 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="qrichtext" content="1" /><style type="text/css">
+p, li { white-space: pre-wrap; }
+</style></head><body style=" font-family:'Consolas'; font-size:12pt; font-weight:400; font-style:normal;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Python 3.6.0 |Anaconda 4.3.1 (32-bit)| (default, Dec 23 2016, 12:06:52) [MSC v.1900 32 bit (Intel)]</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Type &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">IPython 5.1.0 -- An enhanced Interactive Python.</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">?         -&gt; Introduction and overview of IPython's features.</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">%quickref -&gt; Quick reference.</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">help      -&gt; Python's own help system.</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">object?   -&gt; Details about 'object', use 'object??' for extra details.</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">In [</span><span style=" font-weight:600; color:#000080;">1</span><span style=" color:#000080;">]:</span> runfile('D:/201707/python/爬虫/改版后教务处.py', wdir='D:/201707/python/爬虫')</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+b'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
+xF1Ar64OAgtm7diiNHjqC1tRU1NTVobW2N1vC6NmzYgLq6OmGb0+mEzWZDW1
+sbbDZbzP8SSkhIwJ49e9Da2oqmpibs27cPra2tpstz7NixOHbsGFpaWuDxeF
+BXV4empibT5XnN3r17kZ2dPRSbNc/jx4/D4/EMXV5nxjy3bduGBx98EF988Q
+VaWlqQnZ1tqjxnzJgBj8cDj8eDM2fO4Oabb8aKFStMlWNItCj58MMPtSVLlg
+zFu3bt0nbt2hWt4YPS3t6u5ebmDsXTp0/XLly4oGmapl24cEGbPn16rFILyO
+FwaEePHjV1npcvX9Zmz56tNTU1mTLPzs5ObfHixVpDQ4O2bNkyTdPM+XNPT0
+/Xenp6hG1my/PSpUtaRkaGdvXqVWG72fK85t1339XuueceTdPMm+NIRe0Mvb
+u7G1OmTBmK09LS0N3dHa3hDfH5fEhJSQEAJCcnw+fzxTijn3R0dKC5uRmlpa
+WmzHNwcBCFhYWwWq2w2+2mzfPxxx/H888/jxtu+OlXwYx5WiwW3H///SgqKk
+J1dTUA8+XZ3t6OSZMmYePGjZg9ezYeeeQRXL582XR5XlNbW4t169YBMN9naR
+QnRYNksVhgsVhinQYAoL+/H+Xl5aiqqsK4ceOE18yS55gxY+DxeNDV1YXTp0
+/7LTlqhjzfeecdWK3WYS9XM0OeAPDBBx/A4/HgyJEj2LdvH95//33hdTPk+c
+MPP+CTTz7Bo48+iubmZtxyyy1+rQsz5AkAV65cwaFDh7B69Wq/18ySoxFRK+
+ipqano7Owciru6upCamhqt4Q1JSkqC1+sFAHi9Xlit1hhnBAwMDKC8vBzr16
+/HypUrAZgzz2vGjx+PRYsWoa6uznR5njp1CocOHUJGRgbWrl2LY8eO4aGHHj
+JdngCGflesVitWrFiB06dPmy7PtLQ0pKWlobS0FACwatUqfPLJJ6bLEwCOHD
+mCu+66C0lJSQDM/Ts0ElEr6CUlJWhra0N7ezuuXLmC2tpaOByOaA1viMPhgM
+vlAgC4XC6UlZXFNB9N07B582ZkZ2dj+/btQ9vNlmdPTw8uXboEAPjuu+9QX1
++PmTNnmi7P5557Dl1dXejo6EBtbS0WL16MN954w3R5Xr58Gd9+++3Q/x89eh
+R5eXmmyzM5ORlTpkzBuXPnAAANDQ3IyckxXZ4AUFNTM9RuAcz3O2RYNBv2hw
+8f1rKysrSpU6dqO3fujObQutauXaslJydrCQkJWmpqqvbqq69qFy9e1BYvXq
+xlZmZqNptN++abb2Ka48mTJzUAWn5+vlZQUKAVFBRohw8fNl2eLS0tWmFhoZ
+afn6/l5uZqzzzzjKZpmuny/Lnjx48PTYqaLc/z589rs2bN0mbNmqXl5OQM/e
+6YLU9N07Tm5matqKhIy8/P18rKyrTe3l7T5dnf369NmDBBu3Tp0tA2s+VoFO
+8UJSJSBCdFiYgUwYJORKQIFnQiIkWwoBMRKYIFnYhIESzoRESKYEEnIlIECz
+oRkSL+H3msKVM88m6mAAAAAElFTkSuQmCC'
+" /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">输入验证码：avkdy</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">　陈庆宇　 自动化1504    2015001596   2.39  28/30     109/122</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">　陈昊　　 自动化1504    2015001597   2.52  25/30     104/122</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">　范若潇　 自动化1504    2015001598   3.13  15/30      65/122</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">　顾嘉宁　 自动化1504    2015001599   3.11  16/30      67/122</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">　韩震宇　 自动化1504    2015001600   2.79  23/30      88/122</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">　和祥　　 自动化1504    2015001601   3.56  10/30      35/122</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">　李松峰　 自动化1504    2015001602   2.98  18/30      76/122</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">　刘国正　 自动化1504    2015001603   2.88  20/30      82/122</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">　刘特　　 自动化1504    2015001604   2.89  19/30      80/122</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">　马晋杰　 自动化1504    2015001605   3.01  17/30      75/122</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">　邱璐　　 自动化1504    2015001606   2.81  22/30      87/122</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">　孙玉杰　 自动化1504    2015001607   2.28  29/30     117/122</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">　田素航　 自动化1504    2015001608   3.64   8/30      33/122</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">　王未琴　 自动化1504    2015001609   3.36  12/30      46/122</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">　王雅静　 自动化1504    2015001610   4.34   2/30       5/122</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">　温江　　 自动化1504    2015001611   2.86  21/30      83/122</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">　肖杰斌　 自动化1504    2015001612   3.85   5/30      20/122</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">　谢周鹤　 自动化1504    2015001613   3.75   6/30      27/122</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">　杨栋轲　 自动化1504    2015001614   2.54  24/30     103/122</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">　杨洲　　 自动化1504    2015001615   1.94  31/30     123/122</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">　姚亚彤　 自动化1504    2015001616   4.37   1/30       4/122</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">　张汉旺　 自动化1504    2015001617   3.38  11/30      44/122</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">　张迎刚　 自动化1504    2015001618   3.68   7/30      30/122</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">　赵发光　 自动化1504    2015001619   2.48  27/30     106/122</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">　赵凯飞　 自动化1504    2015001620   3.18  13/30      60/122</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">　赵文涛　 自动化1604    2015001621   3.84   1/30      11/119</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">　赵子贤　 自动化1504    2015001622   3.58   9/30      34/122</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">　周阳阳　 自动化1504    2015001623   3.15  14/30      63/122</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">　朱冉　　 自动化1504    2015001624   3.94   4/30      14/122</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">　奚瑞　　 自动化1504    2015001625   2.51  26/30     105/122</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">In [</span><span style=" font-weight:600; color:#000080;">2</span><span style=" color:#000080;">]:</span> stus  = [周阳阳　 自动化1504    2015001623   3.15  14/30      63/122</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">   ...:</span> 　朱冉　　 自动化1504    2015001624   3.94   4/30      14/122</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">   ...:</span> 　奚瑞　　 自动化1504    2015001625   2.51  26/30     105/122]</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#4682b4;">  File </span><span style=" color:#006400;">&quot;&lt;ipython-input-2-3e77bb5cc0fa&gt;&quot;</span><span style=" color:#4682b4;">, line </span><span style=" color:#006400;">1</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#8b0000;">    stus  = [周阳阳　 自动化1504    2015001623   3.15  14/30      63/122</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">                ^</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#8b0000;">SyntaxError:</span> invalid character in identifier</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">In [</span><span style=" font-weight:600; color:#000080;">3</span><span style=" color:#000080;">]:</span> zhu = {&quot;name&quot;:&quot;zhu&quot;}</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">In [</span><span style=" font-weight:600; color:#000080;">4</span><span style=" color:#000080;">]:</span> zhu = {&quot;name&quot;:&quot;zhu&quot;,&quot;vlaue&quot;:1}</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">In [</span><span style=" font-weight:600; color:#000080;">5</span><span style=" color:#000080;">]:</span> zhao = {&quot;name&quot;:&quot;zhao&quot;,&quot;value&quot;:20}</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">In [</span><span style=" font-weight:600; color:#000080;">6</span><span style=" color:#000080;">]:</span> wang = {&quot;name&quot;:&quot;wang&quot;,&quot;value&quot;:15}</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">In [</span><span style=" font-weight:600; color:#000080;">7</span><span style=" color:#000080;">]:</span> test = </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#4682b4;">  File </span><span style=" color:#006400;">&quot;&lt;ipython-input-7-e7b6ab6967d7&gt;&quot;</span><span style=" color:#4682b4;">, line </span><span style=" color:#006400;">1</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#8b0000;">    test =</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">           ^</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#8b0000;">SyntaxError:</span> invalid syntax</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">In [</span><span style=" font-weight:600; color:#000080;">8</span><span style=" color:#000080;">]:</span> test = [zhu,zhao,wang]</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">In [</span><span style=" font-weight:600; color:#000080;">9</span><span style=" color:#000080;">]:</span> test</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#8b0000;">Out[</span><span style=" font-weight:600; color:#8b0000;">9</span><span style=" color:#8b0000;">]:</span> </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">[{'name': 'zhu', 'vlaue': 1},</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> {'name': 'zhao', 'value': 20},</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> {'name': 'wang', 'value': 15}]</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">In [</span><span style=" font-weight:600; color:#000080;">10</span><span style=" color:#000080;">]:</span> test[0][&quot;value&quot;] = 1</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">In [</span><span style=" font-weight:600; color:#000080;">11</span><span style=" color:#000080;">]:</span> test</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#8b0000;">Out[</span><span style=" font-weight:600; color:#8b0000;">11</span><span style=" color:#8b0000;">]:</span> </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">[{'name': 'zhu', 'value': 1, 'vlaue': 1},</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> {'name': 'zhao', 'value': 20},</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> {'name': 'wang', 'value': 15}]</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">In [</span><span style=" font-weight:600; color:#000080;">12</span><span style=" color:#000080;">]:</span> print  (sorted(test,key=lambda x: x[&quot;value&quot;]))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">[{'name': 'zhu', 'vlaue': 1, 'value': 1}, {'name': 'wang', 'value': 15}, {'name': 'zhao', 'value': 20}]</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">In [</span><span style=" font-weight:600; color:#000080;">13</span><span style=" color:#000080;">]:</span> temp = sorted(test,key=lambda x: x[&quot;value&quot;])</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">In [</span><span style=" font-weight:600; color:#000080;">14</span><span style=" color:#000080;">]:</span> temp</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#8b0000;">Out[</span><span style=" font-weight:600; color:#8b0000;">14</span><span style=" color:#8b0000;">]:</span> </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">[{'name': 'zhu', 'value': 1, 'vlaue': 1},</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> {'name': 'wang', 'value': 15},</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> {'name': 'zhao', 'value': 20}]</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">In [</span><span style=" font-weight:600; color:#000080;">15</span><span style=" color:#000080;">]:</span> runfile('D:/201707/python/爬虫/改版后教务处.py', wdir='D:/201707/python/爬虫')</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+b'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
+ciUsT/A674Y/YmbX+bAAAAAElFTkSuQmCC'
+" /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">输入验证码：5bjof</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '杨洲', 'gpa': '1.94'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '孙玉杰', 'gpa': '2.28'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '陈庆宇', 'gpa': '2.39'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '赵发光', 'gpa': '2.48'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '奚瑞', 'gpa': '2.51'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '陈昊', 'gpa': '2.52'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '杨栋轲', 'gpa': '2.54'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '韩震宇', 'gpa': '2.79'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '邱璐', 'gpa': '2.81'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '温江', 'gpa': '2.86'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '刘国正', 'gpa': '2.88'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '刘特', 'gpa': '2.89'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '李松峰', 'gpa': '2.98'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '马晋杰', 'gpa': '3.01'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '顾嘉宁', 'gpa': '3.11'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '范若潇', 'gpa': '3.13'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '周阳阳', 'gpa': '3.15'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '赵凯飞', 'gpa': '3.18'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '王未琴', 'gpa': '3.36'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '张汉旺', 'gpa': '3.38'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '和祥', 'gpa': '3.56'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '赵子贤', 'gpa': '3.58'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '田素航', 'gpa': '3.64'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '张迎刚', 'gpa': '3.68'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '谢周鹤', 'gpa': '3.75'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '赵文涛', 'gpa': '3.84'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '肖杰斌', 'gpa': '3.85'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '朱冉', 'gpa': '3.94'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '王雅静', 'gpa': '4.34'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '姚亚彤', 'gpa': '4.37'}</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">In [</span><span style=" font-weight:600; color:#000080;">16</span><span style=" color:#000080;">]:</span> runfile('D:/201707/python/爬虫/改版后教务处.py', wdir='D:/201707/python/爬虫')</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+b'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
+SS+H8wLkdxS5AWdwAAAABJRU5ErkJggg=='
+" /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">输入验证码：npaqr</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Traceback <span style=" color:#4682b4;">(most recent call last)</span>:</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  File <span style=" color:#006400;">&quot;&lt;ipython-input-16-15504ca94c73&gt;&quot;</span>, line <span style=" color:#006400;">1</span>, in <span style=" color:#9400d3;">&lt;module&gt;</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">    runfile('D:/201707/python/爬虫/改版后教务处.py', wdir='D:/201707/python/爬虫')</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  File <span style=" color:#006400;">&quot;D:\Anaconda\lib\site-packages\spyder\utils\site\sitecustomize.py&quot;</span>, line <span style=" color:#006400;">866</span>, in <span style=" color:#9400d3;">runfile</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">    execfile(filename, namespace)</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  File <span style=" color:#006400;">&quot;D:\Anaconda\lib\site-packages\spyder\utils\site\sitecustomize.py&quot;</span>, line <span style=" color:#006400;">102</span>, in <span style=" color:#9400d3;">execfile</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">    exec(compile(f.read(), filename, 'exec'), namespace)</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  File <span style=" color:#006400;">&quot;D:/201707/python/爬虫/改版后教务处.py&quot;</span>, line <span style=" color:#006400;">93</span>, in <span style=" color:#9400d3;">&lt;module&gt;</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">    main()</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#4682b4;">  File </span><span style=" color:#006400;">&quot;D:/201707/python/爬虫/改版后教务处.py&quot;</span><span style=" color:#4682b4;">, line </span><span style=" color:#006400;">88</span><span style=" color:#4682b4;">, in </span><span style=" color:#9400d3;">main</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#8b0000;">    for it in temp.reverse():</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#8b0000;">TypeError:</span> 'NoneType' object is not iterable</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">In [</span><span style=" font-weight:600; color:#000080;">17</span><span style=" color:#000080;">]:</span> a = [2,5,2,3]</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">In [</span><span style=" font-weight:600; color:#000080;">18</span><span style=" color:#000080;">]:</span> a.reverse()</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">In [</span><span style=" font-weight:600; color:#000080;">19</span><span style=" color:#000080;">]:</span> print(a.reverse())</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">None</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">In [</span><span style=" font-weight:600; color:#000080;">20</span><span style=" color:#000080;">]:</span> runfile('D:/201707/python/爬虫/改版后教务处.py', wdir='D:/201707/python/爬虫')</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+b'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'
+" /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">输入验证码：zx7lx</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '姚亚彤', 'gpa': '4.37'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '王雅静', 'gpa': '4.34'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '朱冉', 'gpa': '3.94'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '肖杰斌', 'gpa': '3.85'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '赵文涛', 'gpa': '3.84'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '谢周鹤', 'gpa': '3.75'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '张迎刚', 'gpa': '3.68'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '田素航', 'gpa': '3.64'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '赵子贤', 'gpa': '3.58'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '和祥', 'gpa': '3.56'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '张汉旺', 'gpa': '3.38'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '王未琴', 'gpa': '3.36'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '赵凯飞', 'gpa': '3.18'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '周阳阳', 'gpa': '3.15'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '范若潇', 'gpa': '3.13'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '顾嘉宁', 'gpa': '3.11'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '马晋杰', 'gpa': '3.01'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '李松峰', 'gpa': '2.98'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '刘特', 'gpa': '2.89'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '刘国正', 'gpa': '2.88'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '温江', 'gpa': '2.86'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '邱璐', 'gpa': '2.81'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '韩震宇', 'gpa': '2.79'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '杨栋轲', 'gpa': '2.54'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '陈昊', 'gpa': '2.52'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '奚瑞', 'gpa': '2.51'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '赵发光', 'gpa': '2.48'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '陈庆宇', 'gpa': '2.39'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '孙玉杰', 'gpa': '2.28'}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">{'name': '杨洲', 'gpa': '1.94'}</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">In [</span><span style=" font-weight:600; color:#000080;">21</span><span style=" color:#000080;">]:</span> temp = &quot;'sssss':'zhu','ssssds':'ran','zzzz':'eeeee'&quot;</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">In [</span><span style=" font-weight:600; color:#000080;">22</span><span style=" color:#000080;">]:</span> import jaon</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Traceback <span style=" color:#4682b4;">(most recent call last)</span>:</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#4682b4;">  File </span><span style=" color:#006400;">&quot;&lt;ipython-input-22-dba7ec139006&gt;&quot;</span><span style=" color:#4682b4;">, line </span><span style=" color:#006400;">1</span><span style=" color:#4682b4;">, in </span><span style=" color:#9400d3;">&lt;module&gt;</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#8b0000;">    import jaon</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#8b0000;">ModuleNotFoundError:</span> No module named 'jaon'</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">In [</span><span style=" font-weight:600; color:#000080;">23</span><span style=" color:#000080;">]:</span> import json</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">In [</span><span style=" font-weight:600; color:#000080;">24</span><span style=" color:#000080;">]:</span> json.loads(temp)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Traceback <span style=" color:#4682b4;">(most recent call last)</span>:</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  File <span style=" color:#006400;">&quot;&lt;ipython-input-24-e6d9f2e39907&gt;&quot;</span>, line <span style=" color:#006400;">1</span>, in <span style=" color:#9400d3;">&lt;module&gt;</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">    json.loads(temp)</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  File <span style=" color:#006400;">&quot;D:\Anaconda\lib\json\__init__.py&quot;</span>, line <span style=" color:#006400;">354</span>, in <span style=" color:#9400d3;">loads</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">    return _default_decoder.decode(s)</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  File <span style=" color:#006400;">&quot;D:\Anaconda\lib\json\decoder.py&quot;</span>, line <span style=" color:#006400;">339</span>, in <span style=" color:#9400d3;">decode</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">    obj, end = self.raw_decode(s, idx=_w(s, 0).end())</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#4682b4;">  File </span><span style=" color:#006400;">&quot;D:\Anaconda\lib\json\decoder.py&quot;</span><span style=" color:#4682b4;">, line </span><span style=" color:#006400;">357</span><span style=" color:#4682b4;">, in </span><span style=" color:#9400d3;">raw_decode</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#8b0000;">    raise JSONDecodeError(&quot;Expecting value&quot;, s, err.value) from None</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#8b0000;">JSONDecodeError:</span> Expecting value</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">In [</span><span style=" font-weight:600; color:#000080;">25</span><span style=" color:#000080;">]:</span> temp = &quot;{'sssss':'zhu','ssssds':'ran','zzzz':'eeeee'}&quot;</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">In [</span><span style=" font-weight:600; color:#000080;">26</span><span style=" color:#000080;">]:</span> json.loads(temp)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Traceback <span style=" color:#4682b4;">(most recent call last)</span>:</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  File <span style=" color:#006400;">&quot;&lt;ipython-input-26-e6d9f2e39907&gt;&quot;</span>, line <span style=" color:#006400;">1</span>, in <span style=" color:#9400d3;">&lt;module&gt;</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">    json.loads(temp)</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  File <span style=" color:#006400;">&quot;D:\Anaconda\lib\json\__init__.py&quot;</span>, line <span style=" color:#006400;">354</span>, in <span style=" color:#9400d3;">loads</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">    return _default_decoder.decode(s)</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  File <span style=" color:#006400;">&quot;D:\Anaconda\lib\json\decoder.py&quot;</span>, line <span style=" color:#006400;">339</span>, in <span style=" color:#9400d3;">decode</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">    obj, end = self.raw_decode(s, idx=_w(s, 0).end())</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#4682b4;">  File </span><span style=" color:#006400;">&quot;D:\Anaconda\lib\json\decoder.py&quot;</span><span style=" color:#4682b4;">, line </span><span style=" color:#006400;">355</span><span style=" color:#4682b4;">, in </span><span style=" color:#9400d3;">raw_decode</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#8b0000;">    obj, end = self.scan_once(s, idx)</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#8b0000;">JSONDecodeError:</span> Expecting property name enclosed in double quotes</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">In [</span><span style=" font-weight:600; color:#000080;">27</span><span style=" color:#000080;">]:</span> temp = '{&quot;sssss&quot;:&quot;zhu&quot;,&quot;ssssds&quot;:&quot;ran&quot;,&quot;zzzz&quot;:&quot;eeeee&quot;}'</p></body></html>
