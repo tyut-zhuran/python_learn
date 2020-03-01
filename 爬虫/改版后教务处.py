@@ -50,7 +50,7 @@ def getInfo(Info_list,Info_dict_list):
     txt_code = getValidateCode(r)
     data = {
     'txt_username':'2015001624',
-    'txt_password':'120337',
+    'txt_password':'password',
     'txt_code':txt_code,
     '__VIEWSTATE':'/wEPDwULLTE5NTY4Njk4MjVkGAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYBBQ1jaGtSZW1lbWJlcm1l26Whon9CYPcGA7yTlPba2kRhH/v5plTTvgh0xjpr1cQ=',
     '__VIEWSTATEGENERATOR':'C2EE9ABB',

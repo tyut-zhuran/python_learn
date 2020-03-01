@@ -30,7 +30,7 @@ s.get(url)
 r = s.get("http://202.207.247.44:8089/validateCodeAction.do")
 v_yzm = validateCode(r)
 
-data = {"zjh":"2015001624","mm":"120337","v_yzm":v_yzm}
+data = {"zjh":"2015001624","mm":"password","v_yzm":v_yzm}
 
 r = s.post("http://202.207.247.44:8089/loginAction.do",headers = headers,data = data)
 r = s.get("http://202.207.247.44:8089/gradeLnAllAction.do?type=ln&oper=fainfo&fajhh=5333")

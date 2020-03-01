@@ -19,7 +19,7 @@ class Stu():
         return (tplt.format(self.name,self.num,self.gpa,self.paiming1,self.paiming2,chr(12288)))
 s = requests.Session()
 
-s.post("http://202.207.247.60/",data = {"txt_username":"2015001614","txt_password":"120337"})
+s.post("http://202.207.247.60/",data = {"txt_username":"2015001614","txt_password":"password"})
 
 url = "http://202.207.247.60/Hander/Cj/CjAjax.ashx?rnd%20=%200.8083452519723235"
 #data = {"limit":"40","offset":"0","order":"asc",
